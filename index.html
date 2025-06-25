@@ -36,42 +36,68 @@
             <h2>Info about Street Hot Tub</h2>
             <div class = "info_button_cont"  id="Info">
                 <button onclick="showModalInfo1()" class ="info_button">
-                    <img src="images/2_450x250_6f6.jpg" alt="">
-                    <h2>There are different types of street hot tub: material, shape and types of heating</h2>
+                    <img src="images/jacuzzi-ogrodowe-balia-thermo-0-brak-impregnacji-w-scaled.jpg" alt="">
+                    <h2>What is a Street Hot Tub?
+                        <br>ㅤ
+                    </h2>
                 </button>  
 
                 <button onclick = "showModalInfo2()" class ="info_button">                 
                     <img src="images/2018.08.09-Composit-group-040_450x250_6f6.jpg" alt="">
-                    <h2>Street hot tub for baths: types, characteristics, advantages and disadvantages</h2>
+                    <h2>Choosing the Perfect Hot Tub: <br> Wood vs Polypropylene</h2>
                     </button>
                 </div>    
             </div>
-  
+
                 <script>
                     function showModalInfo1() {
                   var modul1 = document.createElement('div');
                   modul1.className = 'modul1';
-                  modul1.innerHTML = '<div class="modul1-content">   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe obcaecati, aspernatur facilis distinctio soluta, iste cupiditate et perspiciatis libero dolore? Nam amet laudantium tempora sapiente asperiores dicta aspernatur voluptasMollitia, debitis inventore. Numquam officiis, cum assumenda exercitationem, magni ab doloremque dolorem perferendis ipsum accusantium dolor. Aut, qui assumenda labore culpa voluptates repellendus libero, aliquid non cupiditate, vel quibusdam deserunt?Ut, explicabo dolore fugit deserunt perspiciatis, facere laudantium fuga aliquam officia laboriosam, quasi facilis sit magnam quibusdam est molestiae eos molestias cupiditate assumenda atque reiciendis magni iusto ullam? Doloribus, accusamus!Repellat velit laborum maxime voluptatem eligendi veniam exercitationem nulla reiciendis nesciunt, vitae, molestias accusamus, rerum id. Neque placeat commodi esse! Fugiat ipsa delectus perferendis! Libero temporibus numquam obcaecati ad consequuntur.Eum nemo deleniti magnam ullam harum expedita fuga eos ad veritatis soluta et laudantium molestiae ratione, excepturi consectetur voluptates saepe ipsa hic quasi quod. Tempora molestias perspiciatis debitis tempore consequatur?Inventore harum molestias dolores corporis nemo ipsa doloribus deserunt, beatae nobis nam repellat aperiam nisi sint odit esse quod! Commodi aperiam minima doloribus impedit aliquam, unde omnis molestias quasi similique.Rerum reiciendis iure voluptas quam similique in doloremque nesciunt eum impedit suscipit nisi et aspernatur obcaecati consectetur, asperiores harum! Animi quidem similique nulla nam esse rerum voluptate asperiores nostrum voluptatem.Aspernatur quis, earum minus iure rem dolor, libero in dolore voluptates et repudiandae autem saepe esse fugit ipsum tempora labore! Dolores dolorem suscipit perferendis optio, quam harum repellat at eaque.Fugit natus ratione suscipit animi iure corporis commodi dicta expedita saepe laborum odit eligendi culpa alias consectetur reprehenderit sunt voluptate nihil, minus assumenda eveniet beatae iste maxime non! Nihil, sed.Animi, asperiores veritatis fuga voluptatem quos, esse, tempore culpa dolore corporis ut laudantium rerum magni quam laboriosam nostrum quae optio. Quisquam, dolore saepe? Laboriosam quia pariatur error exercitationem deserunt rem?Dolorum nemo, temporibus quidem esse fugiat unde dolorem nulla sit tenetur laboriosam itaque accusamus sapiente vero vitae animi tempore! Eaque nulla sint vitae laboriosam fugit, laborum accusamus et ducimus voluptatibus.Magnam provident quibusdam accusantium assumenda aspernatur, ipsam culpa eius porro, molestias voluptate, quaerat rerum soluta vitae numquam. Quo iusto odit itaque similique. Beatae a ipsum, vitae sit numquam labore impedit.</p> </div>';
-                  document.body.appendChild(modul1);
+                  modul1.innerHTML = `
+                  <div class="modul1-content"> 
 
+                 <div class = "block1"> <p>Street Hot Tub is a round or oval wooden  or plastic bathing structure designed for outdoor recreation at any time of the year. 
+                   <img src="images/cedartimberwoodfiredhottubsbccanada_1000.jpeg" alt="">
+                  It is equipped with a water heating system (wood cooker, electric or gas heater), which allows you to enjoy hot water even in cold weather. Ideal for country houses, baths and summer houses. 
+                  </div>
+                   <div class = "block2"> <img src="images/24e789b9-b526-4361-958c-d9a75d1280b9.jfif" alt="">
+                  Provides relaxation, improves blood circulation and gives an atmosphere of cosiness and privacy.</p>
+                  </div>
+                  </div>'
+                  `;
+                  document.body.appendChild(modul1)
                   modul1.style.display = 'block';
                   modul1.addEventListener('click', function() {
                     this.style.display = 'none';
                     document.body.removeChild(this);
                   }
                   )}
-                  function showModalInfo2() {
-                     var modul2 = document.createElement('div');
-                  modul2.className = 'modul2';
-                  modul2.innerHTML = '<div class="modul2-content"> /// </div>';
-                  document.body.appendChild(modul2);
+                function showModalInfo2() {
+  const modul2 = document.createElement('div');
+  modul2.className = 'modul2';
 
-                  modul2.style.display = 'block';
-                  modul2.addEventListener('click', function() {
-                    this.style.display = 'none';
-                    document.body.removeChild(this);
-                  })
-                }
+  modul2.innerHTML = `
+    <div class="modul2-content" onclick="event.stopPropagation()">
+
+      <h2>  Wooden Hot Tub: </h2>
+      <img src="images/wood2.jpg" alt="Wooden Hot Tub 2">
+      <img src="images/wood.jpg" alt="Wooden Hot Tub">
+      <p>Wooden font is a classic of country holidays. Made of larch, oak or cedar, they create a unique atmosphere of cosiness and warmth, filling the air with natural wood aroma. They go well with bathhouses and eco-style landscaping. However, they require regular maintenance and are more sensitive to temperature and humidity fluctuations.</p>
+
+      <h2>  Polypropylene Hot Tub: </h2>
+      <img src="images/poli.jpeg" alt="Polypropylene Hot Tub">
+      <img src="images/pol.jpeg" alt="Polypropylene Hot Tub 2">
+      <p>Polypropylene baths are a practical and durable solution. They are fully airtight, weatherproof, comfortable to use and easy to clean. They can be retrofitted with hydro-massage, lighting or insulation. A great choice for those who appreciate comfort, functionality and modern style.</p>
+    </div>
+  `;
+
+  document.body.appendChild(modul2);
+  modul2.style.display = 'flex';
+
+  modul2.addEventListener('click', function () {
+    document.body.removeChild(this);
+  });
+}
                
                 </script>
 
@@ -80,69 +106,83 @@
 
          <div class = "card_container">
             <div class = "card">
-                <h2 class = "Name">Hot_Tub</h2>
-                 <img class = "main_img" src="images/elit-1-ash-2k-transp-rgb.jpg" alt=""> 
+                <h2 class = "Name">Hot_Tub 160 Round</h2>
+                 <img class = "main_img" src="images/PP-1800-mm-White-thermowood-C-steps-7.png.webp" alt=""> 
                 <ul class="features">
-             <li><strong>Capacity:</strong> 4 people</li>
-             <li><strong>Water Volume:</strong> 1500 L</li>
-             <li><strong>Diameter:</strong> 2.0 m</li>
+             <li><strong>Capacity:</strong> 2-4 people</li>
+             <li><strong>Water Volume:</strong> 1000 L</li>
+             <li><strong>Diameter:</strong> 1.6 m</li>
              <li><strong>Furnace:</strong> Wood-fired</li>
              <li><strong>Design:</strong> Round</li>
-             <li><strong>Height:</strong> 1.2 m</li>
-             <li><strong>Model:</strong> BanyaPro 2025</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 160 HOT</li>
                 </ul>
+
+                <div class = "purchase">
+                <p class = "price">Price 1800$</p>
                 <button onclick="showModal()" class ="buy" id="openModalButton">
                     <p>Buy</p>
                 </button>
             </div>
+            </div>
+            
 
             <div class = "card">
-             <h2 class = "Name">Hot_Tub</h2>
-            <img class = "main_img" src="images/elit-1-ash-2k-transp-rgb.jpg" alt="">
+             <h2 class = "Name">Hot_Tub 200 Square</h2>
+            <img class = "main_img" src="images/PP-SQUER-2200-x2200-16.png.webp" alt="">
                 <ul class="features">
-             <li><strong>Capacity:</strong> 6 people</li>
+             <li><strong>Capacity:</strong> 4-8 people</li>
              <li><strong>Water Volume:</strong> 1500 L</li>
              <li><strong>Diameter:</strong> 2.0 m</li>
              <li><strong>Furnace:</strong> Wood-fired</li>
-             <li><strong>Design:</strong> Round</li>
-             <li><strong>Height:</strong> 1.2 m</li>
-             <li><strong>Model:</strong> BanyaPro 2025</li>
+             <li><strong>Design:</strong> Square</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub BOX 200 HOT</li>
                 </ul>
+                  <div class = "purchase">
+                <p class = "price">Price 2800$</p>
                 <button onclick="showModal()" class ="buy">
                     <p>Buy</p>
                 </button>
+                </div>
             </div>
             <div class = "card">
-                 <h2 class = "Name">Hot_Tub</h2>
-                <img class = "main_img" src="images/elit-1-ash-2k-transp-rgb.jpg" alt="">
+                 <h2 class = "Name">Hot_Tub 200 Round</h2>
+                <img class = "main_img" src="images/comfort220-3-pine-2k-transp-rgb.png " alt="">
                  <ul class="features">
-             <li><strong>Capacity:</strong> 6 people</li>
-             <li><strong>Water Volume:</strong> 1500 L</li>
+             <li><strong>Capacity:</strong> 4-6 people</li>
+             <li><strong>Water Volume:</strong> 1300 L</li>
              <li><strong>Diameter:</strong> 2.0 m</li>
              <li><strong>Furnace:</strong> Wood-fired</li>
              <li><strong>Design:</strong> Round</li>
-             <li><strong>Height:</strong> 1.2 m</li>
-             <li><strong>Model:</strong> BanyaPro 2025</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 200 HOT</li>
                 </ul>
+                  <div class = "purchase">
+                <p class = "price">Price 2500$</p>
                 <button onclick="showModal()" class ="buy">
                     <p>Buy</p>
                 </button>
+                </div>
             </div>
             <div class = "card">
-                 <h2 class = "Name">Hot_Tub</h2>
-                <img class = "main_img" src="images/elit-1-ash-2k-transp-rgb.jpg" alt="">
+                 <h2 class = "Name">Cold_Tub 160 Round</h2>
+                <img class = "main_img" src="images/comfort160n-3-pine-2k-transp-rgb.png" alt="">
                  <ul class="features">
-             <li><strong>Capacity:</strong> 6 people</li>
-             <li><strong>Water Volume:</strong> 1500 L</li>
-             <li><strong>Diameter:</strong> 2.0 m</li>
-             <li><strong>Furnace:</strong> Wood-fired</li>
+             <li><strong>Capacity:</strong> 2-4 people</li>
+             <li><strong>Water Volume:</strong> 1000 L</li>
+             <li><strong>Diameter:</strong> 1.6 m</li>
+             <li><strong>Furnace:</strong> NO FURNACE</li>
              <li><strong>Design:</strong> Round</li>
-             <li><strong>Height:</strong> 1.2 m</li>
-             <li><strong>Model:</strong> BanyaPro 2025</li>
+             <li><strong>Height:</strong> 1.1 m</li>
+             <li><strong>Model:</strong> Tub 200 COLD</li>
                 </ul>
+                 <div class = "purchase">
+                <p class = "price">Price 1000$</p>
                 <button onclick="showModal()" class ="buy">
                     <p>Buy</p>
                 </button>
+                </div>
                 <script>
 
                     function showModal() {
